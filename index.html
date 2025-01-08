@@ -18,12 +18,16 @@
     </div>
     <div>
         <div class="container">
-            <img src="HEIF Image 4.heic" class="raccoons">
-            <img src="HEIF Image.heic" class="raccoons">
-            <p>Here are some renders from Apple's <em>Image Playground</em> that I tried to make that resembled Rocket and some black and white spirals just because I think they look cool and match the page.</p>
-            <img src="HEIF Image 2.heic" class="raccoons">
-            <img src="HEIF Image 3.heic" class="raccoons">
+            <img onclick="showModal(this)" src="HEIF Image 4.heic" class="thumbnail">
+            <img onclick="showModal(this)" src="HEIF Image.heic" class="thumbnail">
+            <p class="thumbnail">Here are some renders from Apple's <em>Image Playground</em> that I tried to make that resembled Rocket and some black and white spirals just because I think they look cool and match the page.</p>
+            <img onclick="showModal(this)" src="HEIF Image 2.heic" class="thumbnail">
+            <img onclick="showModal(this)" src="HEIF Image 3.heic" class="thumbnail">
         </div>
+    </div>
+    <div id="modal">
+        <span onclick="hideModal()" id="modal-close-button">x</span>
+        <img id="modal-content">
     </div>
     <div class="outer">
         <div class="inner">
@@ -46,6 +50,20 @@
             <p>G</p>
             <p>H</p>
             <p>T</p>
+        </div>
+    </div>
+    <div class="container-container">
+        <div class="buttonContainer">
+            <button class="flexButtons" onclick="flexStart()">flex-start</button>
+            <button class="flexButtons"></button>
+            <button class="flexButtons"></button>
+            <button class="flexButtons"></button>
+        </div>
+        <div class="text-container">
+            <p class="numba1">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
         </div>
     </div>
         </body>

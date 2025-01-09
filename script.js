@@ -1,6 +1,7 @@
 function flexStart() {
 const button = document.querySelectorAll("button")
-console.log("flex-start")
+const ;
+console.log("flex-start");
 }
 //For clicking on the ai pictures and making them pop up
 const modal = document.getElementById("modal");

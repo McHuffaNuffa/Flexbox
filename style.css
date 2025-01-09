@@ -3,42 +3,53 @@ body {
 }
 h1 {
     text-align: center;
-    color: #ffffff;
     font-size: 500%;
-    position: relative;
-    top: 100px;
-    right: 0px;
 }
-.myName{
-    color: #ffffff;
+.top{
+    height: 400px;
+    width: 100%;
+    display: flex;
     position: absolute;
-    right: 200px;
-    top: 225px;
+    top: 0px;
+    left: 0px;
 }
 .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-basis: 100%;
+}
+.black-box {
+    display: flex;
     background-color: #000000;
     width: 500px;
     height: 400px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    flex-shrink: 1;
 }
-.intro {
+.introuction {
     text-align: center;
+    position: absolute;
     background-color: #000000;
     color: #ffffff;
-    padding: 15px 20px 15px 20px;
-    position: absolute;
-    top: 128px;
-    left: 50px;
+    height: 200px;
+    width: 600px;
+    z-index: 1;
+    left: 0px;
+    top: 200px;
 }
-#spiral {
+.spiral-box {
+    display: flex;
+    flex-basis: 100%;
+}
+.spiral {
     z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 400px;
-    width: 1040px;
 }
 
 .outer{
@@ -66,7 +77,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 500px;
     background-color: #000000;
 }
 .container-container {
